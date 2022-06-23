@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="compass"
+            type="com.dev175.liveearthmap.model.Compass" />
+
+        <variable
+            name="compassItemClicked"
+            type="com.dev175.liveearthmap.myinterface.ICompassSelectListener" />
+    </data>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="25dp"
+    app:cardUseCompatPadding="true"
+    android:onClick="@{()-> compassItemClicked.onSelectCompass(compass)}"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+      >
+        <ImageView
+            android:id="@+id/compassImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/compass"
+            app:imageResource="@{compass.image}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/compass"
+            android:text="@{compass.type}"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</layout>

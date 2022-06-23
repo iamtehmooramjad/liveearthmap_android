@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "487398860822",
+    "project_id": "gps-earth-map-naigation",
+    "storage_bucket": "gps-earth-map-naigation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487398860822:android:279034ada8d32801d0ad37",
+        "android_client_info": {
+          "package_name": "com.mobiapps.gps.streetview.liveearthmap.routefinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487398860822-fjs0eluu3sq81st86lbfovm77af6b105.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobiapps.gps.streetview.liveearthmap.routefinder",
+            "certificate_hash": "a9a3229e2f507497c18cffb116e4c25b442915dc"
+          }
+        },
+        {
+          "client_id": "487398860822-7vndb6fberh9r2aacq42l4q0htv4lpiq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaRj7NFjxLOSKmSnHcf8gAn7aWbEMkkII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487398860822-7vndb6fberh9r2aacq42l4q0htv4lpiq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

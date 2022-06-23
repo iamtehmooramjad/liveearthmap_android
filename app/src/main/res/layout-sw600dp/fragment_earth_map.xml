@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MapItemActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/bottomLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/card_icon_size_md"
+                android:layout_height="@dimen/card_icon_size_md_traffic"
+                app:cardCornerRadius="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_above="@id/shareCv"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <CheckBox
+                    android:id="@+id/trafficCb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/custom_traffic_button"
+                    android:checked="false"
+                    android:buttonTintMode="@android:color/transparent"
+                    android:gravity="center"
+                    android:contentDescription="@string/enable_or_disable_traffic" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shareCv"
+                android:layout_width="@dimen/card_icon_size_md"
+                android:layout_height="@dimen/card_icon_size_md"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share"
+                    android:layout_gravity="center"
+                    android:contentDescription="share" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </fragment>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_layout_height_600"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_sub_layout_height_600"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            >
+            <Button
+                android:id="@+id/normalBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/normal"
+                android:textSize="@dimen/card_button_text_size_600"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:textAllCaps="false"
+                android:background="@drawable/round_btn_bg"
+                android:layout_marginEnd="5dp"
+                />
+            <Button
+                android:id="@+id/satelliteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/satellite"
+                android:textSize="@dimen/card_button_text_size_600"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:textAllCaps="false"
+                android:background="@drawable/round_btn_bg"
+                android:layout_marginEnd="5dp"
+                />
+            <Button
+                android:id="@+id/nightBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/night"
+                android:textSize="@dimen/card_button_text_size_600"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:textAllCaps="false"
+                android:background="@drawable/round_btn_bg"
+                android:layout_marginEnd="5dp"
+                />
+            <Button
+                android:id="@+id/terrainBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terrain"
+                android:textSize="@dimen/card_button_text_size_600"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:textAllCaps="false"
+                android:background="@drawable/round_btn_bg"
+                android:layout_marginEnd="5dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_sub_layout2_height_600"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high_traffic"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_md"
+                app:drawableStartCompat="@drawable/ic_high_traffic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medium_traffic"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_md"
+                app:drawableStartCompat="@drawable/ic_medium_traffic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/low_traffic"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_md"
+                app:drawableStartCompat="@drawable/ic_low_traffic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_traffic"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_md"
+                app:drawableStartCompat="@drawable/ic_no_traffic" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FullImageActivity">
+
+    <FrameLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/nativeadlayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/native_ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+       android:layout_below="@+id/nativeadlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.FullImageActivity">
+
+     <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/bottomLayout"/>
+
+    <LinearLayout
+        android:background="@color/primaryVariant"
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnShare"
+            android:layout_width="@dimen/default_camera_button_size"
+            android:layout_height="@dimen/default_camera_button_size"
+            android:src="@drawable/ic_share_blue"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnRotate"
+            android:layout_width="@dimen/default_capture_button_size"
+            android:layout_height="@dimen/default_capture_button_size"
+            android:src="@drawable/ic_baseline_rotate_right_24"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/capture_picture_button" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="@dimen/default_camera_button_size"
+            android:layout_height="@dimen/default_camera_button_size"
+            android:src="@drawable/ic_delete"
+            android:visibility="visible"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/close_camera_button" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

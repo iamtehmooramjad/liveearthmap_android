@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@color/primaryVariant"
+        tools:context=".activity.SplashActivity">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/earth"
+            android:layout_above="@id/logoName"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/logoname"
+            android:layout_centerHorizontal="true"
+           />
+        <TextView
+            android:id="@+id/logoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logoname"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_above="@id/splashText"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/splashText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splashtext"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            />
+ </RelativeLayout>

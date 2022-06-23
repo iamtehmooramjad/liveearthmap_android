@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_above="@+id/granted"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/gps_earth_map_privacy_policy"
+                android:textColor="#06130d"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/privacy_policy_is_very_important_for_to_know_for_the_app_user_and_its_an_essential_part_before_the_app_you_start_it_must_be_in_your_knowledge_what_a_kinds_of_app_you_are_going_to_use_by_reading_our_terms_and_conditions_that_are_mentioned_below_if_you_agree_then_you_are_bound_to_the_terms_and_conditions_described_herein_and_all_terms_and_conditions_that_are_incoperated_by_reference_into_qr_code_scanner_app_terms_and_conditions_by_reading_all_terms_and_conditions_you_acknowledge_that_you_accept_all_the_policies_that_are_outlined_hereby_consent_that_we_may_collect_or_use_you_information_as_described_here_specially"
+                android:textColor="#06130d"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/personal_information"
+                android:textColor="#06130d"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/we_care_about_user_data_and_its_protection_from_unauthorized_access_according_to_the_gdpr_rules_and_hence_we_committed_all_terms_and_conditions_to_provide_the_better_and_secure_services_to_our_clients"
+                android:textColor="#06130d"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/non_personal_informatin"
+                android:textColor="#06130d"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/we_may_collect_non_personal_information_that_does_not_identify_you_correctly_but_helps_us_to_improve_our_services_such_as_operating_system_services_internet_problems_and_browser_you_used_and_the_type_of_computer_we_may_collect_this_data_when_you_interact_with_our_service_we_can_collect_personal_information_from_users_in_a_variety_of_ways_like_in_connection_with_activities_services_features_we_make_available_on_our_services"
+                android:textColor="#06130d"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/ads_that_we_display"
+                android:textColor="#06130d"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/we_are_using_admob_by_google_and_facebook_audience_network_for_ads_and_firebase_for_crash_anlytics"
+                android:textColor="#06130d"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/permissions_that_we_may_use_sensitive_information"
+                android:textColor="#06130d"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/the_following_the_detailed_list_of_permissions_that_we_may_collect_or_use_sensitive_permissions_access_fine_location_access_coarse_location_read_external_storage_write_external_storage_camera_we_are_using_storage_permissions_to_save_locations_data_in_your_mobile_to_view_the_history_of_visited_places_in_future_or_to_keep_the_record_locations_permissions_are_necessary_to_run_the_app_as_it_helps_you_to_show_your_current_location_on_the_map_by_using_gps_sensor_in_your_device"
+                 android:textColor="#06130d"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/how_we_manupulating_data"
+                android:textColor="#06130d"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/this_app_work_only_when_you_allow_the_gps_provider_enabling_to_show_your_current_location_however_we_are_not_saving_your_locations_or_prcocessing_them_if_in_the_future_we_wants_to_collect_them_we_will_inform_you_by_alert_in_the_privacy_policy_and_in_the_what_new_section_update_however_currenly_we_not_getting_or_collecting_any_sensitive_information_to_store_on_our_service_its_all_storing_in_your_device_we_can_use_data_in_the_following_way_update_and_develop_the_services_develop_and_improve_your_experience_manage_the_relationship_with_you_customize_your_service_experience_respond_to_your_comments_and_questions_and_provide_support_to_you_provide_offers_in_the_services_as_well_as_in_other_websites_and_services_send_related_information_e_g_updates_security_alerts_support_messages_to_you"
+                android:textColor="#06130d"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#06130d"
+                android:text="@string/changes_to_privacy_policy"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/gps_earth_map_navigation_in_its_sole_discretion_modify_or_update_this_privacy_policy_from_time_to_time_and_so_you_should_review_this_page_periodically_if_there_are_material_changes_to_this_privacy_policy_or_in_how_gps_earth_map_navigation_will_use_your_personal_information_we_will_notify_you_either_by_prominently_posting_a_notice_of_such_changes_or_by_directly_sending_you_a_notification"
+                android:textColor="#06130d"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#06130d"
+                android:text="@string/contact_us"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/for_any_quries_about_privacy_policy_kindly_contact_us_at_mobiapps32_gmail_com_feel_free_to_contact_us_please_at_any_time"
+                android:textColor="#06130d"
+                android:textSize="20sp"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/granted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:background="@drawable/capsule_bg"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="I Agree and Continue" />
+
+
+</RelativeLayout>

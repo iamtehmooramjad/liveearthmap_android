@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="mapItem"
+            type="com.dev175.liveearthmap.model.MapItem" />
+        
+        <variable
+            name="mapItemClick"
+            type="com.dev175.liveearthmap.adapter.MapItemAdapter.IMapItemClickListener" />
+    </data>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    >
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/item_icon"
+        app:imageResource="@{mapItem.icon}"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:elevation="10dp"   />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rootCard"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="25dp"
+            android:clipChildren="true"
+            app:cardElevation="3dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/innerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="true"
+                android:background="@color/card_bg_light"
+                android:onClick="@{() -> mapItemClick.onMapItemClick(mapItem)}">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/itemtitle"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="@{mapItem.title}"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/arrowRight"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/rightarrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="10dp"
+        android:layout_marginEnd="25dp"
+        />
+</RelativeLayout>
+
+
+</layout>

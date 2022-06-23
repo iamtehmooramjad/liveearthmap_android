@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="saveplace"
+            type="com.dev175.liveearthmap.model.SavePlace" />
+
+        <variable
+            name="savePlaceItemClick"
+            type="com.dev175.liveearthmap.adapter.SavedPlaceAdapter.ISavePlaceItemClickListener" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rootCard"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="25dp"
+                android:clipChildren="true"
+                app:cardElevation="3dp"
+                android:padding="10dp"
+                android:onClick="@{() -> savePlaceItemClick.onSavePlaceItemClick(saveplace)}"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/innerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipChildren="true"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:id="@+id/sourceAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/SourceAddress"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:text="@{saveplace.srcAddress}"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:textColor="#373737"
+                        />
+
+                    <ImageView
+                        android:id="@+id/to"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/down_arrow"
+                        />
+
+                    <TextView
+                        android:id="@+id/destinationAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/DestinationAddress"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:text="@{saveplace.desAddress}"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:singleLine="true"
+                        android:textColor="#373737"
+                        />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/arrowRight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/rightarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:elevation="10dp"
+            android:layout_marginEnd="15dp"
+            />
+    </RelativeLayout>
+
+
+</layout>

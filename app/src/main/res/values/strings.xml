@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">GPS Earth Map Navigation</string>
+    <string name="MAPS_API_KEY_test_temoor">Your_KEY</string>
+    <string name="MAPS_API_KEY_original">YOUR_KEY</string>
+    <string name="splashtext">Feel free to explore the world through with us.</string>
+    <string name="logoname">Earth Map</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="item_icon">item_icon</string>
+    <string name="itemtitle">itemTitle</string>
+    <string name="tap_to_speak">Tap to Speak</string>
+    <string name="microphone">microphone</string>
+    <string name="normal">Normal</string>
+    <string name="satellite">Satellite</string>
+    <string name="night">Night</string>
+    <string name="terrain">Terrain</string>
+    <string name="high_traffic">High Traffic</string>
+    <string name="medium_traffic">Medium Traffic</string>
+    <string name="low_traffic">Low Traffic</string>
+    <string name="no_traffic">No Traffic</string>
+    <string name="starting_point">Starting Point</string>
+    <string name="select_starting_location">Select source location here</string>
+    <string name="ending_point">Ending Point</string>
+    <string name="select_destination_location">Select destination location here</string>
+    <string name="find_route">Find Route</string>
+    <string name="place_name">Place Name</string>
+    <string name="pick_location">Pick Location</string>
+    <string name="my_location">My Location</string>
+    <string name="latitude">Latitude :</string>
+    <string name="longitutde">Longitude :</string>
+    <string name="copy_location">Copy Location</string>
+
+    <string name="copy_address">Copy Address</string>
+    <string name="share_address">Share Address</string>
+    <string name="street_view_image">Street View Image</string>
+    <string name="place_marker">Place Marker</string>
+    <string name="compass">Compass</string>
+    <string name="standard_compass">Standard Compass</string>
+    <string name="map_compass">Map Compass</string>
+    <string name="pin">Pin</string>
+    <string name="preview_area">Preview view</string>
+    <string name="capture">Capture</string>
+    <string name="address">Address</string>
+    <string name="date_time">Date Time</string>
+    <string name="change_camera_button">Change Camera Button</string>
+    <string name="capture_picture_button">Capture Picture Button</string>
+    <string name="close_camera_button">Close Camera Button</string>
+    <string name="more_apps">More Apps</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="notification_add_to_cart_button" translatable="false">Like</string>
+    <string name="notifications_admin_channel_name">Global channel</string>
+    <string name="notifications_admin_channel_description">Notifications sent from the app admin</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share">Share</string>
+    <string name="earth_map">GPS Earth Map Navigation</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="gallery">Gallery</string>
+    <string name="page_title">Gps Map Camera</string>
+    <string name="name">Name</string>
+    <string name="to">to</string>
+    <string name="SourceAddress">Source Address</string>
+    <string name="DestinationAddress">Destination Address</string>
+    <string name="image_name">Image Name</string>
+    <string name="image">Image</string>
+    <string name="gallery_image">Gallery Image</string>
+    <string name="image_logo">Image Logo</string>
+    <string name="latitudeVal">31.31321</string>
+    <string name="globe">Globe</string>
+    <string name="longitude_val">32.83192</string>
+    <string name="enable_or_disable_traffic">Enable or Disable Traffic</string>
+    <string name="share_location">Share Location</string>
+    <string name="fileimage">fileimage</string>
+    <string name="allow_permission">Allow Permission</string>
+    <string name="privacy_policy_is_very_important_for_to_know_for_the_app_user_and_its_an_essential_part_before_the_app_you_start_it_must_be_in_your_knowledge_what_a_kinds_of_app_you_are_going_to_use_by_reading_our_terms_and_conditions_that_are_mentioned_below_if_you_agree_then_you_are_bound_to_the_terms_and_conditions_described_herein_and_all_terms_and_conditions_that_are_incoperated_by_reference_into_qr_code_scanner_app_terms_and_conditions_by_reading_all_terms_and_conditions_you_acknowledge_that_you_accept_all_the_policies_that_are_outlined_hereby_consent_that_we_may_collect_or_use_you_information_as_described_here_specially">Privacy policy is very important for to know for the app user and its an essential part before the app you start it must be in your knowledge what a kinds of app you are going to use. By reading our terms and conditions that are mentioned below if you agree then you are bound to the terms and conditions described herein and all terms and conditions that are incoperated by reference into qr code scanner App terms and conditions.By reading all terms and conditions you acknowledge that you accept all the policies that are outlined hereby consent that we may collect or use you information as described here specially .</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="we_care_about_user_data_and_its_protection_from_unauthorized_access_according_to_the_gdpr_rules_and_hence_we_committed_all_terms_and_conditions_to_provide_the_better_and_secure_services_to_our_clients">We care about user data and its protection from unauthorized access according to the GDPR rules and hence we committed all terms and conditions to provide the better and secure services to our clients.</string>
+    <string name="non_personal_informatin">Non Personal Informatin</string>
+    <string name="we_may_collect_non_personal_information_that_does_not_identify_you_correctly_but_helps_us_to_improve_our_services_such_as_operating_system_services_internet_problems_and_browser_you_used_and_the_type_of_computer_we_may_collect_this_data_when_you_interact_with_our_service_we_can_collect_personal_information_from_users_in_a_variety_of_ways_like_in_connection_with_activities_services_features_we_make_available_on_our_services">We may collect non personal information that does not identify you correctly but helps us to improve our services such as operating system services, internet problems and browser you used and the type of computer .We may collect this data when you interact with our service. we can collect personal information from users in a variety of ways like in connection with activities , services, features we make available on our services</string>
+    <string name="ads_that_we_display">Ads that we Display</string>
+    <string name="we_are_using_admob_by_google_and_facebook_audience_network_for_ads_and_firebase_for_crash_anlytics">We are using admob by google, and facebook audience network for ads and Firebase for crash Anlytics .</string>
+    <string name="permissions_that_we_may_use_sensitive_information">Permissions that we may use sensitive information</string>
+    <string name="the_following_the_detailed_list_of_permissions_that_we_may_collect_or_use_sensitive_permissions_access_fine_location_access_coarse_location_read_external_storage_write_external_storage_camera_we_are_using_storage_permissions_to_save_locations_data_in_your_mobile_to_view_the_history_of_visited_places_in_future_or_to_keep_the_record_locations_permissions_are_necessary_to_run_the_app_as_it_helps_you_to_show_your_current_location_on_the_map_by_using_gps_sensor_in_your_device">The following the detailed list of permissions that we may collect or use sensitive permissions: ACCESS_FINE_LOCATION ACCESS_COARSE_LOCATION READ_EXTERNAL_STORAGE WRITE_EXTERNAL_STORAGE CAMERA we are using storage permissions to save locations data in your mobile to view the history of visited places in future or to keep the record. Locations permissions are necessary to run the app as it helps you to show your current location on the map by using Gps sensor in your device .</string>
+    <string name="how_we_manupulating_data">How we manupulating data</string>
+    <string name="this_app_work_only_when_you_allow_the_gps_provider_enabling_to_show_your_current_location_however_we_are_not_saving_your_locations_or_prcocessing_them_if_in_the_future_we_wants_to_collect_them_we_will_inform_you_by_alert_in_the_privacy_policy_and_in_the_what_new_section_update_however_currenly_we_not_getting_or_collecting_any_sensitive_information_to_store_on_our_service_its_all_storing_in_your_device_we_can_use_data_in_the_following_way_update_and_develop_the_services_develop_and_improve_your_experience_manage_the_relationship_with_you_customize_your_service_experience_respond_to_your_comments_and_questions_and_provide_support_to_you_provide_offers_in_the_services_as_well_as_in_other_websites_and_services_send_related_information_e_g_updates_security_alerts_support_messages_to_you">This app work only when you allow the Gps provider enabling to show your current location however we are not saving your locations or prcocessing them ,if in the future we wants to collect them we will inform you by alert in the privacy policy and in the what new section update. however currenly we not getting or collecting any sensitive information to store on our service its all storing in your device. we can use data in the following way. Update and develop the Services Develop and improve your experience Manage the relationship with you Customize your service experience Respond to your comments and questions and provide support to you Provide offers in the Services as well as in other websites and services Send related information (e.g. updates, security alerts, support messages) to you</string>
+    <string name="changes_to_privacy_policy">Changes to privacy policy:</string>
+    <string name="gps_earth_map_navigation_in_its_sole_discretion_modify_or_update_this_privacy_policy_from_time_to_time_and_so_you_should_review_this_page_periodically_if_there_are_material_changes_to_this_privacy_policy_or_in_how_gps_earth_map_navigation_will_use_your_personal_information_we_will_notify_you_either_by_prominently_posting_a_notice_of_such_changes_or_by_directly_sending_you_a_notification">Gps Earth Map Navigation in its sole discretion, modify or update this Privacy Policy from time to time, and so you should review this page periodically. If there are material changes to this Privacy Policy or in how Gps Earth Map Navigation will use your personal information, we will notify you either by prominently posting a notice of such changes or by directly sending you a notification</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="for_any_quries_about_privacy_policy_kindly_contact_us_at_mobiapps32_gmail_com_feel_free_to_contact_us_please_at_any_time">For any quries about privacy policy kindly contact us at iamtehmooramjad@gmail.com . feel free to contact us please at any time.</string>
+    <string name="gps_earth_map_privacy_policy">GPS Earth Map Privacy Policy</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="no_data_saved_yet">No Place Saved Yet</string>
+
+
+    ///////////fan test ads
+    <string name="fb_placement_banner">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="fb_placement_NativeAdvanced">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="fb_placement_Interstitial">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+
+    /////admob testing ad ids
+    <string name="banner_id" >ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ADMOB_NATIVE_ADVANCED">ca-app-pub-3940256099942544/3986624511</string>
+
+    /////////////////// original ad ids :
+
+    ///////////fan original ads
+    <!--
+    <string name="fb_placement_banner">4019680801376007_4019696304707790</string>
+    <string name="fb_placement_NativeAdvanced">4019680801376007_4019693118041442</string>
+    <string name="fb_placement_Interstitial">4019680801376007_4019695491374538</string>
+
+    /////admob original ad ids
+    <string name="banner_id" >ca-app-pub-7075020079090393/6678839242</string>
+    <string name="Interstitial">ca-app-pub-7075020079090393/7820530525</string>
+    <string name="ADMOB_NATIVE_ADVANCED">ca-app-pub-7075020079090393/2568203843</string>
+    -->
+
+
+
+
+</resources>

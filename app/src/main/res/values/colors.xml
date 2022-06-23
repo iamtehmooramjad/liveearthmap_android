@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FF5722</color>
+    <color name="purple_500">#00BCD4</color>
+    <color name="purple_700">#FFEB3B</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#0496ff</color>
+    <color name="primaryVariant">#006ba6</color>
+    <color name="card_bg_light">#F8F8F8</color>
+    <color name="heading_bg">#073b4c</color>
+</resources>

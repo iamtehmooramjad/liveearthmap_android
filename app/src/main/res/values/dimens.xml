@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="card_height">150dp</dimen>
+    <dimen name="md_keylines">16dp</dimen>
+    <dimen name="tile_padding">8dp</dimen>
+    <dimen name="tile_height">160dp</dimen>
+    <dimen name="app_bar_height">256dp</dimen>
+    <dimen name="article_keylines">72dp</dimen>
+    <dimen name="avator_size">40dp</dimen>
+    <dimen name="card_title_height">40dp</dimen>
+    <dimen name="article_titles">20sp</dimen>
+    <dimen name="cards_button_width">48dp</dimen>
+    <dimen name="cards_button_height">48dp</dimen>
+    <dimen name="article_subheading">16sp</dimen>
+    <dimen name="card_image_height">200dp</dimen>
+    <dimen name="list_body">14sp</dimen>
+    <dimen name="navheader_height">222dp</dimen>
+
+    <dimen name="camera_bottom_layout_height">60dp</dimen>
+    <dimen name="default_camera_button_size">40dp</dimen>
+    <dimen name="default_capture_button_size">40dp</dimen>
+    <dimen name="card_text_layout">60dp</dimen>
+    <dimen name="card_button_text_size">12sp</dimen>
+    <dimen name="compass_height">130dp</dimen>
+    <dimen name="source_location_icon_size">30dp</dimen>
+    <dimen name="bottom_layout_height">80dp</dimen>
+    <dimen name="bottom_sub_layout_height">60dp</dimen>
+    <dimen name="bottom_sub_layout2_height">30dp</dimen>
+
+    <dimen name="card_icon_size_sm">30dp</dimen>
+    <dimen name="card_icon_size_sm_traffic">40dp</dimen>
+    <dimen name="card_map_height">90dp</dimen>
+    <dimen name="text_title">14sp</dimen>
+
+
+    <!--    ///////////// sw600dp ////////////////////-->
+
+    <dimen name="camera_bottom_layout_height_600">80dp</dimen>
+    <dimen name="default_camera_button_size_600">40dp</dimen>
+    <dimen name="default_capture_button_size_600">50dp</dimen>
+
+    <dimen name="card_height_600">250dp</dimen>
+    <dimen name="card_text_layout_600">120dp</dimen>
+    <dimen name="card_button_text_size_600">20sp</dimen>
+
+    <dimen name="card_button_height_600">200dp</dimen>
+    <dimen name="card_button_width_600">70dp</dimen>
+    <dimen name="card_text_block_size_600">24sp</dimen>
+    <dimen name="title_text_size_600">28sp</dimen>
+    <dimen name="button_height_600">70dp</dimen>
+    <dimen name="compass_height_600">230dp</dimen>
+    <dimen name="source_location_icon_size_600">60dp</dimen>
+    <dimen name="text_size_sm">8sp</dimen>
+
+
+    <dimen name="bottom_layout_height_600">150dp</dimen>
+    <dimen name="bottom_sub_layout_height_600">100dp</dimen>
+    <dimen name="bottom_sub_layout2_height_600">50dp</dimen>
+    <dimen name="text_size_md">16sp</dimen>
+
+    <dimen name="card_icon_size_md">50dp</dimen>
+    <dimen name="card_icon_size_md_traffic">60dp</dimen>
+    <dimen name="card_map_height_600">150dp</dimen>
+    <dimen name="text_title_600">24sp</dimen>
+
+    <!--    ///////////// sw720dp ////////////////////-->
+
+    <dimen name="camera_bottom_layout_height_720">80dp</dimen>
+    <dimen name="default_camera_button_size_720">40dp</dimen>
+    <dimen name="default_capture_button_size_720">50dp</dimen>
+
+    <dimen name="card_height_720">400dp</dimen>
+    <dimen name="card_text_layout_720">200dp</dimen>
+    <dimen name="card_text_block_size_720">32sp</dimen>
+
+    <dimen name="card_button_height_720">100dp</dimen>
+    <dimen name="card_button_width_720">300dp</dimen>
+    <dimen name="card_button_text_size_720">40sp</dimen>
+    <dimen name="title_text_size_720">40sp</dimen>
+    <dimen name="button_height_720">100dp</dimen>
+    <dimen name="compass_height_720">450dp</dimen>
+    <dimen name="source_location_icon_size_720">80dp</dimen>
+
+
+    <dimen name="bottom_layout_height_720">250dp</dimen>
+    <dimen name="bottom_sub_layout_height_720">200dp</dimen>
+    <dimen name="bottom_sub_layout2_height_720">50dp</dimen>
+    <dimen name="text_size_lg">32sp</dimen>
+    <dimen name="card_icon_size_lg">80dp</dimen>
+    <dimen name="card_icon_size_lg_traffic">90dp</dimen>
+
+    <dimen name="card_map_height_720">250dp</dimen>
+    <dimen name="text_title_720">34sp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+
+
+</resources>

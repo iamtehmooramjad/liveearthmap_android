@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.GpsTrackerActivity">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/adViewheader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.GpsTrackerActivity">
+
+    <fragment
+        android:id="@+id/gpsTrackerMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MapItemActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-30dp"
+        android:layout_above="@+id/bottomLayoutCv"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomLayoutCv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height_600"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/latitude"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/title_text_size_600"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/latitudeVal"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    tools:text="31.83192"
+                    android:textSize="@dimen/title_text_size_600"/>
+                <Button
+                    android:id="@+id/share"
+                    android:background="@drawable/round_btn_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height_600"
+                    android:text="@string/share_location"
+                    android:textSize="@dimen/card_button_text_size_600"
+                    android:textAllCaps="false"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/longitutde"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/title_text_size_600"
+                    />
+                <TextView
+                    android:id="@+id/longitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/longitude_val"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/title_text_size_600"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height_600"
+                    android:text="@string/copy_location"
+                    android:textSize="@dimen/card_button_text_size_600"
+                    android:textAllCaps="false"
+                    android:background="@drawable/round_btn_bg"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adViewheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_current"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_id">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</RelativeLayout>

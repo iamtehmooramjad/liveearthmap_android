@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.GpsMapCameraActivity">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/nativeadlayout"
+    android:layout_height="match_parent"
+    tools:context=".activity.SavedPlacesActivity">
+
+
+    <com.mlsdev.animatedrv.AnimatedRecyclerView
+        android:id="@+id/savedPlacesRecyclerView"
+        tools:listitem="@layout/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:animationDuration="600"
+        app:layoutAnimation="@anim/layout_animation_from_bottom"
+        app:layoutManagerOrientation="vertical"
+        app:layoutManagerReverse="false"
+        app:layoutManagerType="linear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="17sp"
+        android:id="@+id/nodatasaved"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:text="@string/no_data_saved_yet"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/nativeadlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/native_ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </FrameLayout>
+</RelativeLayout>

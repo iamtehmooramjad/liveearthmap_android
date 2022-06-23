@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddressFinderActivity">
+
+    <fragment
+        android:id="@+id/gpsTrackerMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MapItemActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-30dp"
+        android:layout_above="@+id/bottomLayoutCv">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pin"
+                android:layout_width="@dimen/card_icon_size_sm"
+                android:layout_height="@dimen/card_icon_size_sm"
+                android:src="@drawable/pin"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                android:contentDescription="@string/pin" />
+
+        </RelativeLayout>
+
+    </fragment>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomLayoutCv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/fullAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_text_layout"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/cardview_bg_white"
+                android:padding="5dp"
+                android:text=""/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/copy_address"
+                    android:textSize="@dimen/card_button_text_size"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="0dp"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/round_btn_bg"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share_address"
+                    android:textSize="@dimen/card_button_text_size"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="0dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/round_btn_bg"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
